@@ -96,10 +96,10 @@
 
         ARROW {
             bindings = <
-&kp LC(UP_ARROW)  &kp LC(LEFT_ARROW)      &kp UP_ARROW    &kp LC(RIGHT_ARROW)      &kp LC(DOWN_ARROW)                            &kp RC(UP_ARROW)  &kp RC(LEFT_ARROW)  &kp UP_ARROW    &kp RC(RIGHT_ARROW)  &kp RC(DOWN_ARROW)
-&kp HOME          &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END             &trans         &trans     &kp HOME          &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp END
-&trans            &trans                  &trans          &trans                   &trans              &kp LG(L)      &kp RG(L)  &trans            &trans              &trans          &trans               &trans
-&trans            &trans                  &trans          &trans                   &trans              &trans         &trans     &trans                                                                     &trans
+&kp LC(UP_ARROW)  &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT_ARROW)  &kp LC(DOWN_ARROW)                            &kp RC(UP_ARROW)  &kp RC(LEFT_ARROW)      &kp UP_ARROW   &kp RC(RIGHT_ARROW)      &kp RC(DOWN_ARROW)
+&kp HOME          &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp END             &trans         &trans     &kp HOME          &kp RC(RA(LEFT_ARROW))  &kp RA(RC(F))  &kp RC(RA(RIGHT_ARROW))  &kp END
+&trans            &trans              &trans          &trans               &trans              &kp LG(L)      &kp RG(L)  &trans            &trans                  &trans         &trans                   &trans
+&trans            &trans              &trans          &trans               &trans              &trans         &trans     &trans                                                                            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -125,10 +125,10 @@
 
         layer_6 {
             bindings = <
-&trans  &trans        &trans        &trans        &trans                           &trans        &trans        &trans        &trans        &trans
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &trans
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &trans
+&trans  &trans        &trans        &trans        &trans                           &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans  &trans  &trans  &trans  &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                          &trans
             >;
         };
     };
