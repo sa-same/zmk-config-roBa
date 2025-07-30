@@ -58,6 +58,14 @@
     };
 
     behaviors {
+        lt_to_layer_0: lt_to_layer_0 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_TAP_TO_0";
+            bindings = <&mo>, <&to_layer_0>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+    };
        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
@@ -79,7 +87,7 @@
 &mt LEFT_COMMAND Q  &kp LEFT_CONTROL  &kp CLCK  &kp TAB  &lt 3 LCMD  &lt_to_layer_0 1 SPACE      &lt 2 SPACE    &lt 3 RCMD                             &mt RIGHT_COMMAND P
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         FUNCTION {
