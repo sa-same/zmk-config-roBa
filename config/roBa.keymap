@@ -4,7 +4,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define MOUSE 4
-#define SCROLL 1
+#define SCROLL 5
 #define NUM 6
 
 &mt {
@@ -65,6 +65,14 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
+        };
+       scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc MOVE_Y(-20)>, <&msc MOVE_Y(-20)>;
+            // 追加: スクロールのタップ時間を設定 (20ms)
+
+            tap-ms = <20>;
         };
     };
 
